@@ -1,0 +1,376 @@
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <!-- Document Meta ============================================= -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--IE Compatibility Meta-->
+    <meta name="author" content="zytheme" />
+    <meta name="description" content="Multi-purpose Makerting html5 landing page">
+    <link href="assets/images/favicon/favicon.png" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthPod - Tu Ecosistema Médico 24/7</title>
+
+    <!-- Tailwind compilado + estilos personalizados -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Fonts / Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        health: {
+                            blue: '#0066cc', // Updated to a slightly warmer/modern blue
+                            dark: '#0f172a',
+                            light: '#f0f9ff',
+                            red: '#e11d48', // Modern red
+                            accent: '#38bdf8'
+                        },
+                        warm: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            200: '#eaddd7',
+                            900: '#4a403c',
+                        }
+                    },
+                    backgroundImage: {
+                        'hero-gradient': 'linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.4))',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-hpDark text-white font-sans selection:bg-hpGreen selection:text-black">
+
+
+    <!-- Navigation Bar (Floating & Sticky) -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 w-full px-4 pt-4 pb-2 transition-all duration-300">
+        <div
+            class="mx-auto w-full max-w-6xl glass-nav rounded-full px-6 py-4 flex items-center justify-between transition-all duration-300">
+
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="assets/images/Logo/Logo_Horizontal_White.png" class="logo-light h-8 w-auto"
+                    alt="Healthpod Light">
+                <img src="assets/images/Logo/Logo_Horizontal_Original.png" class="logo-dark h-8 w-auto"
+                    alt="Healthpod Dark">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-10">
+                <a href="index.html#el-pod" class="text-sm font-bold text-white hover:text-[#DCE7FF]">El Pod</a>
+                <a href="index.html#membresia" class="text-sm font-bold text-white hover:text-[#DCE7FF]">Membresía</a>
+                <a href="index.html#nosotros" class="text-sm font-bold text-white hover:text-[#DCE7FF]">Nosotros</a>
+                <a href="under-construction.html"
+                    class="px-6 py-2 rounded-full border text-sm font-bold text-white-99 hover:bg-white hover:text-slate-900 transition">
+                    Acceso Clientes
+                </a>
+            </div>
+
+            <!-- Mobile / Tablet Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-white">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Drawer -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-4 right-4 mt-4 bg-white rounded-2xl shadow-xl p-8 flex-col gap-6 z-50">
+            <a href="index.html#el-pod" class="text-lg font-semibold text-slate-800">El Pod</a>
+            <a href="index.html#membresia" class="text-lg font-semibold text-slate-800">Membresía</a>
+            <a href="index.html#nosotros" class="text-lg font-semibold text-slate-800">Nosotros</a>
+            <a href="under-construction.html"
+                class="mt-4 px-6 py-3 bg-health-blue text-white rounded-full font-bold text-center">
+                Acceso Clientes
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Banner -->
+    <header
+        class="relative w-full h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden pt-32 md:pt-0">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="assets/images/Imagery/HP-Office.jpg" alt="HealthPod Lobby" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-slate-900/15"></div>
+            <!-- Overlay Gradient for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-90"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 container mx-auto px-4 text-center mt-28 md:mt-16 max-w-4xl">
+
+            <h1
+                class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white txt-shadow leading-tight mb-6">
+                HEALTHPOD WORK
+            </h1>
+
+            <p class="text-lg md:text-xl text-white txt-shadow mb-10 max-w-2xl mx-auto font-bold leading-relaxed">
+                Salud inteligente para organizaciones de alto rendimiento
+            </p>
+
+        </div>
+    </header>
+
+    <!-- Quick Features & Pathways Section -->
+    <section class="relative z-20 lg:-mt-20 pb-20 px-4 md:-mt-20">
+        <div class="container mx-auto max-w-6xl">
+
+            <!-- Glass Features Card -->
+            <div class="rounded-3xl p-8 md:p-12 shadow-xl bg-white">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6">
+                        Potencia el activo más valioso de tu empresa: tu gente
+                    </h2>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                        Lleva tu cultura corporativa al siguiente nivel con una infraestructura de salud in-house. HealthPod no solo 
+                        atiende malestares; crea un ecosistema de prevención y atención ágil que mantiene a tu equipo sano, valorado y 
+                        enfocado. Es la evolución de la salud ocupacional: proactiva, tecnológica y diseñada para que la operación nunca
+                        se detenga.
+                    </p>
+                    <h2 class="text-slate-600 text-2xl font-bold mb-10">¿Por qué es diferente?</h2>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 text-center">
+                    <!-- Feature 1 -->
+                    <div class="group p-4 transition-all hover:-translate-y-2 duration-300">
+                        <div
+                            class="w-16 h-16 mx-auto mb-6 bg-blue-50 rounded-2xl flex items-center justify-center text-health-blue group-hover:bg-health-blue group-hover:text-white transition-colors shadow-sm">
+                            <span class="material-symbols-outlined text-4xl">workspace_premium</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-800 mb-3">Eficiencia Operativa</h2>
+                        <p class="text-slate-500 text-sm leading-relaxed">Resolvemos necesidades médicas en minutos, cuidando el tiempo y la energía de tu equipo.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="group p-4 transition-all hover:-translate-y-2 duration-300">
+                        <div
+                            class="w-16 h-16 mx-auto mb-6 bg-blue-50 rounded-2xl flex items-center justify-center text-health-blue group-hover:bg-health-blue group-hover:text-white transition-colors shadow-sm">
+                            <span class="material-symbols-outlined text-4xl">partner_heart</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-800 mb-3">Fidelización de talento</h2>
+                        <p class="text-slate-500 text-sm leading-relaxed">una prestación tangible que demuestra compromiso real con el bienestar de tus colaboradores.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="group p-4 transition-all hover:-translate-y-2 duration-300">
+                        <div
+                            class="w-16 h-16 mx-auto mb-6 bg-blue-50 rounded-2xl flex items-center justify-center text-health-blue group-hover:bg-health-blue group-hover:text-white transition-colors shadow-sm">
+                            <span class="material-symbols-outlined text-4xl">health_and_safety</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-800 mb-3">Prevensión Inteligente</h2>
+                        <p class="text-slate-500 text-sm leading-relaxed">Tecnología que anticipa riesgos y cuida la salud física y mental de tu organización.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="py-24 px-6 text-hpDark">
+        <!-- Ancho adaptable: 95% móvil, 90% tablet, 75% escritorio -->
+        <div class="w-[95%] md:w-[90%] lg:w-[75%] mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-slate-800 text-3xl md:text-5xl font-extrabold mb-6 leading-tight">Diseñemos la solución
+                    perfecta para tu visión.</h2>
+                <p class="text-gray-600 text-lg mb-8 max-w-3xl mx-auto font-medium">
+                    No creemos en las fórmulas genéricas; creemos en soluciones de alto impacto. Tu espacio tiene un ADN
+                    único y necesidades específicas. HealthPod diseña una infraestructura tecnológica de salud a la
+                    medida que se integra a tu operación.
+                </p>
+            </div>
+
+            <div
+                class="glass-card-featured bg-hpLightBg p-6 md:p-10 lg:p-14 rounded-3xl shadow-xl border border-gray-100">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-health-blue to-blue-400 text-white px-4 py-1 rounded-full text-xs font-bold tracking-wider">
+                        LLENA EL FORMULARIO O CONTÁCTANOS POR WHATSAPP</div>
+                <!-- Grid adaptable: 1 col móvil, 2 cols tablet y superior -->
+                <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                    <!-- Campo: Nombre Completo -->
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-m font-black uppercase tracking-widest text-white ml-1">Nombre
+                            Completo</label>
+                        <input type="text" name="nombre" required placeholder="Ej. Carlos Rivera"
+                            class="bg-white border-2 border-gray-100 focus:border-hpGreen focus:ring-0 outline-none p-4 rounded-xl transition-all text-hpDark placeholder:text-gray-300">
+                    </div>
+
+                    <!-- Campo: Correo Corporativo -->
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-m font-black uppercase tracking-widest text-white ml-1">Correo
+                            Corporativo</label>
+                        <input type="email" name="email" required placeholder="carlos@desarrollo.com"
+                            class="bg-white border-2 border-gray-100 focus:border-hpGreen focus:ring-0 outline-none p-4 rounded-xl transition-all text-hpDark placeholder:text-gray-300">
+                    </div>
+
+                    <!-- Campo: Teléfono / WhatsApp -->
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-m font-black uppercase tracking-widest text-white ml-1">Teléfono /
+                            WhatsApp</label>
+                        <input type="tel" name="telefono" required placeholder="+52 ..."
+                            class="bg-white border-2 border-gray-100 focus:border-hpGreen focus:ring-0 outline-none p-4 rounded-xl transition-all text-hpDark placeholder:text-gray-300">
+                    </div>
+
+                    <!-- Campo: Nombre de la Empresa -->
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-m font-black uppercase tracking-widest text-white ml-1">Empresa o
+                            Desarrollo</label>
+                        <input type="text" name="empresa" required placeholder="Ej. Torre Residencial Elite"
+                            class="bg-white border-2 border-gray-100 focus:border-hpGreen focus:ring-0 outline-none p-4 rounded-xl transition-all text-hpDark placeholder:text-gray-300">
+                    </div>
+
+                    <!-- Campo: Cargo -->
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-m font-black uppercase tracking-widest text-white ml-1">Cargo /
+                            Puesto</label>
+                        <input type="text" name="cargo" required placeholder="Ej. Director Comercial"
+                            class="bg-white border-2 border-gray-100 focus:border-hpGreen focus:ring-0 outline-none p-4 rounded-xl transition-all text-hpDark placeholder:text-gray-300">
+                    </div>
+
+                    <!-- Menú Desplegable: Tipo de Solución -->
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-m font-black uppercase tracking-widest text-white ml-1">Tipo de
+                            Solución de Interés</label>
+                        <select name="solucion" required
+                            class="bg-white border-2 border-gray-100 focus:border-hpGreen focus:ring-0 outline-none p-4 rounded-xl transition-all text-hpDark">
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="integral">Solución Integral (Cabina HealthPod + Plataforma de Salud + Beneficios)</option>
+                            <option value="digital">Solución Digital (Solo Plataforma de Salud + Beneficios)</option>
+                        </select>
+                    </div>
+
+                    <!-- Menú Desplegable: Usuarios -->
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-m font-black uppercase tracking-widest text-white ml-1">Usuarios
+                            Estimados</label>
+                        <select name="usuarios" required
+                            class="bg-white border-2 border-gray-100 focus:border-hpGreen focus:ring-0 outline-none p-4 rounded-xl transition-all text-hpDark">
+                            <option value="" disabled selected>Selecciona un rango</option>
+                            <option value="<50">Menos de 50</option>
+                            <option value="50-100">50 - 100</option>
+                            <option value="100-500">100 - 500</option>
+                            <option value="500-1000">500 - 1,000</option>
+                            <option value="1000-5000">1,000 - 5,000</option>
+                            <option value=">5000">Más de 5,000</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo: Ubicaciones -->
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-m font-black uppercase tracking-widest text-white ml-1">Ubicaciones
+                            del Proyecto</label>
+                        <input type="text" name="ubicacion" required placeholder="Ej. CDMX, Monterrey..."
+                            class="bg-white border-2 border-gray-100 focus:border-hpGreen focus:ring-0 outline-none p-4 rounded-xl transition-all text-hpDark placeholder:text-gray-300">
+                    </div>
+
+                    <!-- Botón de Envío Centrado y con Estilos Solicitados -->
+                    <div class="md:col-span-2 pt-6 flex justify-center">
+                        <button type="submit"
+                            class="flex items-center justify-center gap-2 px-8 py-4 bg-white/80 backdrop-blur-sm text-slate-900 border border-slate-200 rounded-full font-bold text-sm tracking-wide hover:bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 uppercase shadow-md">
+                            <span>Solicitar Propuesta Personalizada</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <a href="https://wa.me/5618189718"
+                            class="flex items-center justify-center space-x-3 mt-4 text-hpDark font-bold hover:text-black transition-colors group">
+                            <span class="bg-hpDark text-hpGreen rounded-full group-hover:bg-hpGreen group-hover:text-black transition-colors">
+                                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.747-2.874-2.512-2.96-2.626-.087-.115-.708-.941-.708-1.797 0-.856.43-1.274.587-1.447.157-.174.346-.217.46-.217.115 0 .23 0 .331.005.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.115-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.777 1.394.864.174.088.275.073.376-.042.101-.116.433-.506.548-.68.115-.173.231-.144.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z" />
+                                </svg>
+                            </span>
+                            <span class="tracking-tight text-sm">O hablemos directamente por WhatsApp</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-100 pt-16 pb-8">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-10 mb-12 text-center lg:text-left">
+                <!-- Logo -->
+                <div class="mb-8 lg:mb-0 flex flex-col items-center lg:items-start">
+                    <div class="flex items-center gap-2 text-2xl font-bold text-slate-800">
+                        <a href="index.html" class="flex items-center gap-4 group">
+                            <img src="assets/images/Logo/Logo_Horizontal_Original.png" class="h-8 w-auto"
+                                alt="Healthpod Dark">
+                        </a>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 max-w-xs text-center md:text-left">
+                        Innovando el futuro de la atención médica primaria en México.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+                    <a href="#" class="text-sm text-slate-600 hover:text-health-blue transition-colors">Aviso de
+                        Privacidad</a>
+                    <a href="#" class="text-sm text-slate-600 hover:text-health-blue transition-colors">Términos y
+                        Condiciones</a>
+                    <a href="#" class="text-sm text-slate-600 hover:text-health-blue transition-colors">Soporte</a>
+                </div>
+
+                <!-- Socials -->
+                <div class="flex gap-4">
+                    <a href="https://www.healthpod.mx/#"
+                        class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-health-blue hover:text-white transition-all">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/healthpod.mx"
+                        class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-health-blue hover:text-white transition-all">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/healthpodmx/"
+                        class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:bg-health-blue hover:text-white transition-all">
+
+                        <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free v6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-100 pt-8 text-center text-slate-400 text-xs">
+                ©
+                <script>document.write(new Date().getFullYear());</script> HealthPod Mexico. Todos los derechos
+                reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

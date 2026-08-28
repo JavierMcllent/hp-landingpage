@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Editores
+.vscode/
+.idea/
+
+# Secretos
+.env
+.env.*
+!.env.example
+!.env.template
+*.key
+*.pem
+*.p12
+*.pfx
+*.keystore
+credentials*
+secrets*
+
+# Temporales
+*.tmp
+*~
