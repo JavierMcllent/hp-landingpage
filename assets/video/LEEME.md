@@ -45,8 +45,9 @@ Vive fuera de este repositorio, porque pesa y no se publica:
 
     Projects/Healthpod/Landing Page/Animacion Landing HP/alfa/maestro-hero-pod.mov
 
-Son 6 segundos, el mismo corte exacto que el `.webm` y el mismo cuadro que el póster. Si conviertes
-otro archivo, las duraciones dejan de coincidir y el bucle se comporta distinto en cada navegador.
+Son **8 segundos**, el mismo corte exacto que el `.webm` y el mismo cuadro que el póster. Si
+conviertes otro archivo, las duraciones dejan de coincidir y el bucle se comporta distinto en cada
+navegador.
 
 ### La alternativa con terminal
 
@@ -70,8 +71,22 @@ exportar y hay que repetir el paso 3.
 ## Qué hay hoy en esta carpeta
 
 El `.webm` y el póster corresponden a la **secuencia de construcción**, el pod ensamblándose desde
-el wireframe, que es la que se eligió para el hero. Duran **6 segundos**, recortados de los 10 del
-render original para cumplir el objetivo de peso del canon de medios.
+el wireframe, que es la que se eligió para el hero.
+
+**Versión del 2026-08-31, recortada de un render sobre fondo verde**, que sustituye a la anterior,
+obtenida por resta contra una placa del estudio. El cambio se nota en el flanco derecho del pod:
+con la resta salía dentado, porque en el render viejo esa cara tenía la misma luminancia que el
+fondo; sobre verde el borde sale continuo y el alfa ambiguo se redujo a la mitad.
+
+Duran **8 segundos**, no 6: la animación tarda siete en completar el montaje y cortarla antes la
+dejaba a medias. Sigue muy por debajo del techo de 15 que fija el canon de medios.
+
+Bajo el plinto no hay nada: en el render original hay unos apoyos pequeños que quedan fundidos con su
+propia sombra y no se pueden separar en este origen, así que la pieza corta al ras. La sombra sigue
+viajando dentro del video.
+
+El material de origen llegó por WhatsApp, a 820 kbps, así que **es una prueba y no la versión
+final**. Con un render en mejor calidad, este mismo proceso da un borde más limpio todavía.
 
 **Falta el `hero-pod.mp4`**, y hasta que exista, en Safari y en iPhone el pod se ve dentro de un
 rectángulo negro. Se produce con cualquiera de las dos vías de arriba, a partir del maestro.
