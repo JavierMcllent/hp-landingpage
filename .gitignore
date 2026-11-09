@@ -24,3 +24,6 @@ secrets*
 # Temporales
 *.tmp
 *~
+
+# Evidencia y reportes de los agentes: no son fuente (pauta 16 del Tech Lead, C-DEV-015, 2026-11-08).
+Artifacts/
